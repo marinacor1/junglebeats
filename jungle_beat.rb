@@ -24,15 +24,8 @@ class JungleBeat
     end
   end
 
-  # def append(song_note)
-  #   new_node = Node.new(song_note)
-  #   tail.link = new_node
-  # end
-
   def tail
     current_node = @head
-    #while
-    #current_node.link != nil
     until current_node.link.nil?
       current_node = current_node.link
     end
