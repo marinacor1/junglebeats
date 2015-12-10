@@ -24,7 +24,7 @@ class NodeTest < Minitest::Test
   def test_new_node_is_inserted_at_arbitrary_postion
     # skip
     new_linked_list = JungleBeat.new("da ba")
-    new_linked_list.insert(1, "la")
+    new                                    _linked_list.insert(1, "la")
     assert_equal "da la ba", new_linked_list.all
   end
 

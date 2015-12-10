@@ -79,17 +79,6 @@ class JungleBeat
       end
   end
 
-#   while current_node != nil && current_node != song_note
-#     if current_node.song_note == song_note
-#       break
-#     else
-#       current_node = current_node.link
-#       number += 1
-#     end
-#   end
-#   number
-# end
-
   def pop
     current_node = @head
     if current_node.link == nil
