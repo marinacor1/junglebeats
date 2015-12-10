@@ -24,8 +24,7 @@ class NodeTest < Minitest::Test
   def test_new_node_is_inserted_at_arbitrary_postion
     # skip
     new_linked_list = JungleBeat.new("da ba")
-    new
-    \_linked_list.insert(1, "la")
+    new_linked_list.insert(1, "la")
     assert_equal "da la ba", new_linked_list.all
   end
 
@@ -71,18 +70,5 @@ class NodeTest < Minitest::Test
     new_linked_list = JungleBeat.new("da ka wa ba za la")
     assert_equal "ba", new_linked_list.find(3)
   end
-
-  # def test_find_first_occurrence_of_a_value
-  #   skip
-  #   new_linked_list = JungleBeat.new("da wa wa ba za la")
-  #   assert_equal 2, new_linked_list.first_occurrence("wa")
-  # end
-  #
-  # def test_remove_first_occurrence_of_a_value
-  #   skip
-  #   new_linked_list = JungleBeat.new("da wa wa ba za la")
-  #   new_linked_list.remove_first
-  #   assert_equal "da wa ba za la", new_linked_list.all
-  # end
 
 end
