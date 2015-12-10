@@ -12,7 +12,11 @@ class JungleBeat
   end
 
   def play
-    `say -r 500 -v Boing #{all}`
+    `say -r 600 -v Boing #{all}`
+  end
+
+  def reset_voice
+    `say -r 8000 -v Alice #{all}`
   end
 
   def append(song_note)
